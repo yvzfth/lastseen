@@ -94,16 +94,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "lastseen"
-version = "0.1.0"
-dependencies = [
- "chrono",
- "js-sys",
- "lazy_static",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "lazy_static"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -163,6 +153,16 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
+]
+
+[[package]]
+name = "timeagoplus"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "js-sys",
+ "lazy_static",
+ "wasm-bindgen",
 ]
 
 [[package]]

@@ -30,7 +30,7 @@ pub fn time_ago(timestamp: f64, detailed_label: bool, lang: Language) -> String 
             let count = remaining_seconds / seconds;
             if count > 0 {
                 remaining_seconds %= seconds;
-                parts.push(format!("{} {}{}", count, if count != 1 { plural } else { singular }, if count != 1 { "s" } else { "" }));
+                parts.push(format!("{} {}", count, if count != 1 { plural } else { singular }));
             }
         }
 

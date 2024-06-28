@@ -78,115 +78,115 @@ console.log(elapsedTime); // Output will be in the format of "1 year, 2 months a
 
 The `Language` enum provides a wide range of languages you can use.
 
-| Language Code | Full Language Name      | Language Family |
-| ------------- | ----------------------- | --------------- |
-| ACM           | Mesopotamian Arabic     | Afroasiatic     |
-| AEC           | Saidi Arabic            | Afroasiatic     |
-| AEB           | Tunisian Arabic         | Afroasiatic     |
-| AMH           | Amharic                 | Afroasiatic     |
-| APC           | North Levantine Arabic  | Afroasiatic     |
-| APD           | Samar-Leyte Visayan     | Austronesian    |
-| ARQ           | Algerian Arabic         | Afroasiatic     |
-| ARS           | Najdi Arabic            | Afroasiatic     |
-| ARY           | Moroccan Arabic         | Afroasiatic     |
-| ARZ           | Egyptian Arabic         | Afroasiatic     |
-| ASM           | Assamese                | Indo-European   |
-| AWD           | Awadhi                  | Indo-European   |
-| AYN           | Northern Altai          | Turkic          |
-| AZB           | South Azerbaijani       | Turkic          |
-| AZE           | Azerbaijani             | Turkic          |
-| BGC           | Haryanvi                | Indo-European   |
-| BHJ           | Bhojpuri                | Indo-European   |
-| BLG           | Bulgarian               | Indo-European   |
-| BMS           | Javanese                | Austronesian    |
-| BNG           | Bengali                 | Indo-European   |
-| CEB           | Cebuano                 | Austronesian    |
-| CFR           | Crimean Tatar           | Turkic          |
-| CHN           | Mandarin Chinese        | Sino-Tibetan    |
-| CJY           | Jinyu Chinese           | Sino-Tibetan    |
-| CIT           | Citak                   | Austronesian    |
-| CCX           | Northern Luri           | Indo-European   |
-| CZC           | Czech                   | Indo-European   |
-| DCC           | Dakhini                 | Indo-European   |
-| DUT           | Dutch                   | Indo-European   |
-| ENG           | English                 | Indo-European   |
-| FRN           | French                  | Indo-European   |
-| FUV           | Nigerian Fulfulde       | Niger-Congo     |
-| GAZ           | West Central Oromo      | Afroasiatic     |
-| GER           | German                  | Indo-European   |
-| GJR           | Gujarati                | Indo-European   |
-| GRK           | Greek, Modern (1453-)   | Indo-European   |
-| HAK           | Hakka Chinese           | Sino-Tibetan    |
-| HAT           | Haitian; Haitian Creole | Indo-European   |
-| HIL           | Hiligaynon              | Austronesian    |
-| HND           | Hindi                   | Indo-European   |
-| HNE           | Chhattisgarhi           | Indo-European   |
-| HNG           | Hungarian               | Uralic          |
-| HSN           | Xiang Chinese           | Sino-Tibetan    |
-| HUA           | Mandarin Chinese        | Sino-Tibetan    |
-| IGR           | Igbo                    | Niger-Congo     |
-| ILO           | Iloko                   | Austronesian    |
-| INZ           | Indonesian              | Austronesian    |
-| ITN           | Italian                 | Indo-European   |
-| JAN           | Javanese                | Austronesian    |
-| JPN           | Japanese                | Japonic         |
-| KAZ           | Kazakh                  | Turkic          |
-| KJV           | Kannada                 | Indo-European   |
-| KKN           | Kokni                   | Indo-European   |
-| KMR           | Khmer                   | Austroasiatic   |
-| KNN           | Gan Chinese             | Sino-Tibetan    |
-| KUR           | Central Kurdish         | Indo-European   |
-| LMO           | Lombard                 | Indo-European   |
-| MEX           | Mexican Spanish         | Indo-European   |
-| MJS           | Malaccan Creole Malay   | Austronesian    |
-| MKD           | Macedonian              | Indo-European   |
-| MKP           | Mohawk                  | Iroquoian       |
-| MHJ           | Mahajani                | Indo-European   |
-| MLI           | Malayalam               | Dravidian       |
-| MNP           | Manipuri                | Sino-Tibetan    |
-| MQM           | Macaense                | Indo-European   |
-| MRT           | Marathi                 | Indo-European   |
-| NEP           | Nepali                  | Indo-European   |
-| NPL           | Nepali                  | Indo-European   |
-| ORY           | Odia                    | Indo-European   |
-| PBT           | Southern Pashto         | Indo-European   |
-| PBU           | Northern Pashto         | Indo-European   |
-| PES           | Western Farsi           | Indo-European   |
-| PNJ           | Eastern Panjabi         | Indo-European   |
-| PNB           | Western Panjabi         | Indo-European   |
-| PQL           | Pomeranian              | Indo-European   |
-| POR           | Portuguese              | Indo-European   |
-| PRS           | Eastern Farsi           | Indo-European   |
-| RUA           | Kinyarwanda             | Niger-Congo     |
-| RUM           | Romanian                | Indo-European   |
-| RUS           | Russian                 | Indo-European   |
-| RUW           | Kinyarwanda             | Niger-Congo     |
-| SHD           | Kundal Shahi            | Indo-European   |
-| SKR           | Saraiki                 | Indo-European   |
-| SNH           | Sinhala                 | Indo-European   |
-| SND           | Sindhi                  | Indo-European   |
-| SOM           | Somali                  | Afroasiatic     |
-| SPN           | Spanish                 | Indo-European   |
-| SRC           | Serbian                 | Indo-European   |
-| SUO           | Finnish                 | Uralic          |
-| SWD           | Swedish                 | Indo-European   |
-| TCV           | Caviteño                | Austronesian    |
-| TCW           | Telugu                  | Indo-European   |
-| TGL           | Tagalog                 | Austronesian    |
-| THJ           | Tai                     | Kra-Dai         |
-| TTR           | Tatar                   | Turkic          |
-| TTS           | Tausug                  | Austronesian    |
-| TRK           | Turkish                 | Turkic          |
-| TWS           | Twi                     | Niger-Congo     |
-| UKR           | Ukrainian               | Indo-European   |
-| URD           | Urdu                    | Indo-European   |
-| UZB           | Uzbek                   | Turkic          |
-| UIG           | Uighur                  | Turkic          |
-| VIE           | Vietnamese              | Austroasiatic   |
-| WUU           | Wu Chinese              | Sino-Tibetan    |
-| YOR           | Yoruba                  | Niger-Congo     |
-| YUH           | Chinese, Yue            | Sino-Tibetan    |
-| ZUU           | Zulu                    | Niger-Congo     |
+| Language Code | Language Name           |
+| ------------- | ----------------------- |
+| `ACM`         | Mesopotamian Arabic     |
+| `AEC`         | Saidi Arabic            |
+| `AEB`         | Tunisian Arabic         |
+| `AMH`         | Amharic                 |
+| `APC`         | North Levantine Arabic  |
+| `APD`         | Samar-Leyte Visayan     |
+| `ARQ`         | Algerian Arabic         |
+| `ARS`         | Najdi Arabic            |
+| `ARY`         | Moroccan Arabic         |
+| `ARZ`         | Egyptian Arabic         |
+| `ASM`         | Assamese                |
+| `AWD`         | Awadhi                  |
+| `AYN`         | Northern Altai          |
+| `AZB`         | South Azerbaijani       |
+| `AZE`         | Azerbaijani             |
+| `BGC`         | Haryanvi                |
+| `BHJ`         | Bhojpuri                |
+| `BLG`         | Bulgarian               |
+| `BMS`         | Javanese                |
+| `BNG`         | Bengali                 |
+| `CEB`         | Cebuano                 |
+| `CFR`         | Crimean Tatar           |
+| `CHN`         | Mandarin Chinese        |
+| `CJY`         | Jinyu Chinese           |
+| `CIT`         | Citak                   |
+| `CCX`         | Northern Luri           |
+| `CZC`         | Czech                   |
+| `DCC`         | Dakhini                 |
+| `DUT`         | Dutch                   |
+| `ENG`         | English                 |
+| `FRN`         | French                  |
+| `FUV`         | Nigerian Fulfulde       |
+| `GAZ`         | West Central Oromo      |
+| `GER`         | German                  |
+| `GJR`         | Gujarati                |
+| `GRK`         | Greek, Modern (1453-)   |
+| `HAK`         | Hakka Chinese           |
+| `HAT`         | Haitian; Haitian Creole |
+| `HIL`         | Hiligaynon              |
+| `HND`         | Hindi                   |
+| `HNE`         | Chhattisgarhi           |
+| `HNG`         | Hungarian               |
+| `HSN`         | Xiang Chinese           |
+| `HUA`         | Mandarin Chinese        |
+| `IGR`         | Igbo                    |
+| `ILO`         | Iloko                   |
+| `INZ`         | Indonesian              |
+| `ITN`         | Italian                 |
+| `JAN`         | Javanese                |
+| `JPN`         | Japanese                |
+| `KAZ`         | Kazakh                  |
+| `KJV`         | Kannada                 |
+| `KKN`         | Kokni                   |
+| `KMR`         | Khmer                   |
+| `KNN`         | Gan Chinese             |
+| `KUR`         | Central Kurdish         |
+| `LMO`         | Lombard                 |
+| `MEX`         | Mexican Spanish         |
+| `MJS`         | Malaccan Creole Malay   |
+| `MKD`         | Macedonian              |
+| `MKP`         | Mohawk                  |
+| `MHJ`         | Mahajani                |
+| `MLI`         | Malayalam               |
+| `MNP`         | Manipuri                |
+| `MQM`         | Macaense                |
+| `MRT`         | Marathi                 |
+| `NEP`         | Nepali                  |
+| `NPL`         | Nepali                  |
+| `ORY`         | Odia                    |
+| `PBT`         | Southern Pashto         |
+| `PBU`         | Northern Pashto         |
+| `PES`         | Western Farsi           |
+| `PNJ`         | Eastern Panjabi         |
+| `PNB`         | Western Panjabi         |
+| `PQL`         | Pomeranian              |
+| `POR`         | Portuguese              |
+| `PRS`         | Eastern Farsi           |
+| `RUA`         | Kinyarwanda             |
+| `RUM`         | Romanian                |
+| `RUS`         | Russian                 |
+| `RUW`         | Kinyarwanda             |
+| `SHD`         | Kundal Shahi            |
+| `SKR`         | Saraiki                 |
+| `SNH`         | Sinhala                 |
+| `SND`         | Sindhi                  |
+| `SOM`         | Somali                  |
+| `SPN`         | Spanish                 |
+| `SRC`         | Serbian                 |
+| `SUO`         | Finnish                 |
+| `SWD`         | Swedish                 |
+| `TCV`         | Caviteño                |
+| `TCW`         | Telugu                  |
+| `TGL`         | Tagalog                 |
+| `THJ`         | Tai                     |
+| `TTR`         | Tatar                   |
+| `TTS`         | Tausug                  |
+| `TRK`         | Turkish                 |
+| `TWS`         | Twi                     |
+| `UKR`         | Ukrainian               |
+| `URD`         | Urdu                    |
+| `UZB`         | Uzbek                   |
+| `UIG`         | Uighur                  |
+| `VIE`         | Vietnamese              |
+| `WUU`         | Wu Chinese              |
+| `YOR`         | Yoruba                  |
+| `YUH`         | Chinese, Yue            |
+| `ZUU`         | Zulu                    |
 
 ## License
 

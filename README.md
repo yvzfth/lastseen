@@ -18,30 +18,43 @@ npm install timeagoplus
 
 ## Usage
 
-Here is an example of how to use the `timeagoplus` package in a React application:
+Below are examples of how to use the `timeagoplus` package in both a React component and a plain JavaScript file.
+
+### React Example
+
+First, make sure you have installed the `timeagoplus` package:
+
+```sh
+npm install timeagoplus
+```
+
+Now, here's how you can use it in a React component:
 
 ```typescript
 import React, { useState, useEffect } from 'react';
-import init, { time_ago, Language } from 'timeagoplus';
+import init, { TimeAgo, Language } from 'timeagoplus';
 
 const HomePage: React.FC = () => {
   const [time, setTime] = useState('');
 
   useEffect(() => {
-    const fetchData = async () => {
-      await init();
-      const timeString = time_ago(
-        new Date('2024-06-27T20:00:00+03:00').getTime(),
-        true,
-        Language.ENG
-      );
-      setTime(timeString);
-    };
+    let intervalId: NodeJS.Timeout;
 
-    fetchData();
+    // Initialization (Runs Only Once)
+    init().then(() => {
+      // Create a TimeAgo instance with default language and detailed label
+      const timeAgo = new TimeAgo(Language.TRK);
 
-    const intervalId = setInterval(fetchData, 60000);
+      // Example using timestamp
+      setTime(timeAgo.format(new Date().getTime())); // "now"
 
+      // Update Logic (Runs every second)
+      intervalId = setInterval(() => {
+        setTime(timeAgo.format(new Date('2024-06-27T20:00:00+03:00')));
+      }, 1000); // Update every second
+    });
+
+    // Cleanup (Runs when the component unmounts)
     return () => clearInterval(intervalId);
   }, []);
 
@@ -51,28 +64,51 @@ const HomePage: React.FC = () => {
 export default HomePage;
 ```
 
-### `time_ago` Function
+### JavaScript Example
 
-```typescript
-time_ago(timestamp: number, detailed_label: boolean, lang: Language): string;
+For plain JavaScript, make sure to also install the `timeagoplus` package:
+
+```sh
+npm install timeagoplus
 ```
 
-#### Parameters
+Here's how you can use it in a simple HTML file:
 
-- `timestamp`: The timestamp (in milliseconds) for which you want to calculate the elapsed time.
-- `detailed_label`: A boolean value indicating whether to use detailed labels.
-- `lang`: The language for the output.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeAgoPlus Example</title>
+  </head>
+  <body>
+    <div id="time"></div>
+    <script type="module">
+      import init, { TimeAgo, Language } from 'timeagoplus';
 
-#### Example
+      document.addEventListener('DOMContentLoaded', async () => {
+        await init();
+        const timeAgo = new TimeAgo(Language.TRK);
 
-```typescript
-const timestamp = new Date('2024-06-27T20:00:00+03:00').getTime();
-const detailedLabel = true;
-const language = Language.ENG;
+        // Example using timestamp
+        document.getElementById('time').textContent = timeAgo.format(
+          new Date().getTime()
+        ); // "now"
 
-const elapsedTime = time_ago(timestamp, detailedLabel, language);
-console.log(elapsedTime); // Output will be in the format of "1 year, 2 months ago" or similar
+        // Update Logic (Runs every second)
+        setInterval(() => {
+          document.getElementById('time').textContent = timeAgo.format(
+            new Date('2024-06-27T20:00:00+03:00')
+          );
+        }, 1000); // Update every second
+      });
+    </script>
+  </body>
+</html>
 ```
+
+Both examples initialize the `timeagoplus` package, create a `TimeAgo` instance, and set up an interval to update the displayed time every second. The React example uses React hooks, while the JavaScript example uses plain DOM manipulation.
 
 ## Supported Languages
 

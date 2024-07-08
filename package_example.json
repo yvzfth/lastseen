@@ -1,0 +1,38 @@
+{
+  "name": "timeagoplus",
+  "version": "0.1.4",
+  "description": "A utility library for calculating time differences and formatting them in various languages.",
+  "main": "timeagoplus.js",
+  "module": "timeagoplus.js",
+  "types": "timeagoplus.d.ts",
+  "files": ["timeagoplus_bg.wasm", "timeagoplus.js", "timeagoplus.d.ts"],
+  "keywords": [
+    "wasm",
+    "webassembly",
+    "time",
+    "date",
+    "formatting",
+    "i18n",
+    "internationalization",
+    "timeago",
+    "timeagoplus",
+    "timeago.js",
+    "timeago-plus",
+    "timeago-plus.js",
+    "timeago-plus.wasm",
+    "lastseen",
+    "lastseen.js",
+    "lastseen.wasm"
+  ],
+  "author": "Fatih Yavuz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yvzfth/timeagoplus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yvzfth/timeagoplus/issues"
+  },
+  "homepage": "https://github.com/yvzfth/timeagoplus#readme",
+  "sideEffects": ["./snippets/*"]
+}
